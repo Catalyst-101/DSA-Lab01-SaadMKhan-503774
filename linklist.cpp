@@ -73,6 +73,7 @@ class SLL{
             }
 
             Node* temp = start;
+
             while (temp->next != nullptr)  // go to last node
                 temp = temp->next;
 
@@ -95,7 +96,7 @@ class SLL{
         {
             Node* temp = start;
 
-            for (int i = 0; i < pos && temp != nullptr; i++)
+            for (int i = 0; i < pos -1 && temp != nullptr; i++)
                 temp = temp->next;
 
             if (temp == nullptr) {
